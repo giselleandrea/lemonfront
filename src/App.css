@@ -1,0 +1,284 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f9f4; /* Fondo verde muy claro */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 35, 12, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #2d572c; /* Verde oscuro para el título */
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px; /* Espacio mayor entre inputs */
+  padding: 10px;
+  border: 1px solid #d4e2d4;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  width: calc(100% - 20px); /* Ancho ajustado */
+  margin: 10px 0;
+}
+
+input:focus {
+  border-color: #66bb6a; /* Verde claro en foco */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #0f8c69; /* Verde oscuro para botón */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #125d55; /* Verde más oscuro en hover */
+}
+
+.error-messages {
+  color: #d32f2f; /* Rojo para mensajes de error */
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-link {
+  color: #007bff; /* Azul para el enlace */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.success-alert {
+  background-color: #5fcdec; 
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.custom-button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda; /* Verde claro para mensaje de éxito */
+  color: #155724; /* Verde oscuro para texto de mensaje de éxito */
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+.back-button {
+  padding: 10px;
+  background-color: #6c757d; /* Gris para botón de regresar */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #343a40; /* Gris más oscuro al hacer hover en el botón */
+}
+
+/* Estilos para la lista de eventos en Profile */
+
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #f4f9f4; /* Fondo verde muy claro */
+}
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #4b0082; /* Morado oscuro para el título */
+  font-size: 2em;
+}
+
+.profile-button {
+  padding: 10px;
+  background-color: #2897a3; /* Turquesa para botón */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #20b2aa; /* Turquesa más oscuro al hacer hover en el botón */
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.event-item {
+  background-color: #e0ffff; /* Fondo verde claro para cada item de evento */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4b0082; /* Morado oscuro para el nombre del evento */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.event-date, .event-capacity, .event-description {
+  font-size: 1em;
+  color: #483d8b; /* Morado más oscuro para los detalles del evento */
+  margin-bottom: 10px;
+}
+
+.event-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button, .delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #29a98b; /* Turquesa para el botón de editar */
+}
+
+.edit-button:hover {
+  background-color: #0e7974; /* Turquesa más oscuro al hacer hover en el botón de editar */
+}
+
+.delete-button {
+  background-color: #320f82; /* Morado oscuro para el botón de eliminar */
+}
+
+.delete-button:hover {
+  background-color: #02026a; /* Morado más oscuro al hacer hover en el botón de eliminar */
+}
+
+.delete-button:last-child {
+  margin-right: 0;
+}
+
